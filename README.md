@@ -1,4 +1,7 @@
 # A Pictures Worth a Thousand Woofs
+<p align="center">
+  <img src=Data/4349564710_ee40075f95_o.jpg>
+</p>
 
 > By: Haydin Bradshaw
 
@@ -24,9 +27,55 @@ Exploratory data analysis for this project, though tedious, came down to viewing
 
 ## Pipeline:
 
-Image files were of .jpg type. All were vectorized, turned to grayscal, and resized to be of uniform pixel density. Afterwards, multiple classifiers such as Random Forests, Stochastic Gadient Descent, Support Vector Machines, and Logistic Regression were used on the dataset to build a best model. 
+Image files were of .jpg type. All were vectorized, turned to grayscal, and resized to be of uniform pixel density. Afterwards, multiple classifiers such as Random Forests, Stochastic Gradient Descent, Support Vector Machines, and Logistic Regression were used on the dataset to build a best model. 
 
 ## Models: 
 
+As mentioned before the models used were **Random Forests**, **Stochastic Gradient Descent**, **Support Vector Machines**, **Logistic Regression**, and a **Convolutional Neural Network**.
 
+---
 
+Comparing all but CNN, Random Forest Classifier performed the best as can be seen by the ROC curve below:
+
+<p align="center">
+  <img width='700' height='700' src=Data/roc_curve.png>
+</p>
+
+We can also look deeper into their individual metrics through their confustion matrices, accuracy, precision and recall values:
+
+Metric | Random Forest | Stochastic Gradient Descent | Support Vector Machine | Linear Regression
+:----------------:|:------------:|:------------:|:-----------:|:------------------:
+Confustion Matrix |![](/Data/rf_mat.png)  |  ![](/Data/sgd_mat.png) | ![](/Data/svm_mat.png) | ![](/Data/lr_mat.png)
+Accuracy          | 0.64         |   0.56       |   0.52      |   0.54
+Recall            | 0.84         |   0.65       |   0.66      |   0.70 
+Precision         | 0.58         |   0.59       |   0.64      |   0.64
+
+<p align="center">
+  <img width='700' height='700' src=Data/prec_rec.png>
+</p>
+
+---
+
+PCA was utilized and optimal number of components were found, however all attempts to model using PCA transformed data were inferior to above metrics.
+
+<p align="center">
+  <img width='700' height='700' src=Data/better_pca.png>
+</p>
+
+<p align="center">
+  <img width='700' height='700' src=Data/dog_face_comp.png>
+</p>
+
+---
+
+Lastly, a Convolutional Neural Network was trained on the built dog dataset. Ending results were superior to all other models, though they had yet to level out. With additional epochs or data a leveled accuracy might be found.
+
+<p align="center">
+  <img width='700' height='700' src=Data/cnn_acc.png>
+</p>
+
+---
+
+## Conclusion:
+
+As we could have guess, convolutional neural networks have the possibility to perform the best. For classical classifiers random forests provide us with the best accuracy and recall which is what is most desired for this application. For future works I will continue work implemting a neural network for classification, expand the dataset of smiling dogs for improved classification, and expand the facial expressions this model can classify.  

@@ -19,7 +19,7 @@ Exploratory data analysis for this project, though tedious, came down to viewing
 
 "Smiling" Dog Example      |  Non "smiling" Dog Example
 :-------------------------:|:-------------------------:
-![](/Data/retriever1.png)  |  ![](/Data/n02106662_10858.jpg)
+![](/Data/retriever1.png)  |  ![](/Data/farzan-lelinwalla-AZ-XcbtrTto-unsplash.jpg)
 
 ## Pipeline:
 

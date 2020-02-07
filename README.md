@@ -17,9 +17,10 @@ The datasets used in the project were the Stanford Dogs dataset and pictures tak
 
 Exploratory data analysis for this project, though tedious, came down to viewing photos of dogs from the breeds listed and determining which were of best fit to the criteria mentioned above. Along with that they needed to be relatively centered and close up in the photograph. Opposing images were of various different forms of and iterations of dogs not "smiling". 
 
-"Smiling" Dog Example      |  Non "smiling" Dog Example
+
+"Smiling" & Facing Camera      |  Not "smiling" nor Facing Camera
 :-------------------------:|:-------------------------:
-![](/Data/retriever1.png)  |  ![](/Data/farzan-lelinwalla-AZ-XcbtrTto-unsplash.jpg)
+![](/Data/zachary-casler-XLZxKsjhdPU-unsplash.jpg)  |  ![](/Data/christopher-stark-ilYiCxBf-m0-unsplash.jpg)
 
 ## Pipeline:
 
